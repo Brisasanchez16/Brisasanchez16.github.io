@@ -220,5 +220,37 @@ footer{
 
 .dibujo2{
     height: 450px;
+    margin: auto;
+}
+
+button{
+    padding: 5px;
+}
+
+
+@media (max-width:800px) {
+    .inicio{
+        font-size: 50px;
+        margin-top: 250px;
+        margin-bottom: 250px;
+    }
+    .divHab{
+        flex-wrap: wrap;
+    }
+
+    .habilidades{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:655px) {
+    .dibujo2{
+        display: none;
+    }
+
+    @media (max-width:561px) {
+        .inicio{
+            font-size: 30px;
+        }
+
 }
 
