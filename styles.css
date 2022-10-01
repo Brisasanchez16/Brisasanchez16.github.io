@@ -246,11 +246,34 @@ button{
     .dibujo2{
         display: none;
     }
-
-    @media (max-width:561px) {
-        .inicio{
-            font-size: 30px;
-        }
-
+    .dibujo{
+        height: 250px;
+        width: 500px;
+    }
+}
+@media (max-width:561px) {
+    .inicio{
+        font-size: 30px;
+    }
 }
 
+@media (max-width:450px) {
+    .inicio{
+        margin-top: 200px;
+        margin-bottom: 240px;
+    }
+}
+
+@media (max-width:350px) {
+    .inicio{
+        margin-top: 150px;
+        margin-bottom: 240px;
+    }
+    .list li{
+        margin: 0 auto;
+        
+    }
+    .list li a{
+        font-size: 10px;
+    }
+}
