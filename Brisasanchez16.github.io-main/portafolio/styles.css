@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-attachment: fixed;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list li{
+    list-style: none;
+    margin: 0 15px;
+    transition: .4s;
+}
+
+.list li a{
+    display: block;
+    text-decoration: none;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 7px;
+    transition: .4s;
+}
+
+.list:hover li a{
+    transform: scale(1.4);
+    opacity: .2;
+    filter: blur(4px);
+}
+
+.list li a:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    filter: blur(0);
+}
+
+.list li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(245, 223, 232);
+    width: 100%;
+    height: 100%;
+    transition: transform .4s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+.list li a:hover:before{
+    transition: transform .4s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.inicio{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+    margin-bottom: 130px;
+}
+
+.aboutme{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.aboutme img{
+    width: 50%;
+}
+
+.habilidades{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.apps{
+    width: 10%;
+    text-align: center;
+    font-size: 13px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.apps img{
+    width: 100%;
+
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.flecha{
+    display: flex;
+    margin: auto;
+    color:rgb(179, 144, 159);
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.divHab{
+    display: flex;
+}
+
+footer{
+    background-color:rgb(179, 144, 159) ; 
+    padding-top: 0%;
+    padding-bottom: 0%;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+}
+
+.cont{
+    margin-top: 10px;
+}
+
+#contacto{
+    margin-top: 10px;
+}
+
+.alink{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.mail{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.container-cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(179, 144, 159);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card:hover .cover-card img{
+    transform: scale(1.1);
+}
+
+.cover-card{
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cover-card img{
+    width: 110%;
+    transition: all 300ms;
+}
+
+.card h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.card p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.card hr{
+    margin-top: 30px;
+    border: none;
+    height: 0.1px;
+    background: rgb(184, 107, 140) ;
+}
+
+.footer-card{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dibujo{
+    height: 400px;
+}
+
+.dibujo2{
+    height: 450px;
+    margin: auto;
+}
+
+button{
+    padding: 5px;
+}
+
+
+@media (max-width:800px) {
+    .inicio{
+        font-size: 50px;
+        margin-top: 250px;
+        margin-bottom: 250px;
+    }
+    .divHab{
+        flex-wrap: wrap;
+    }
+
+    .habilidades{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:655px) {
+    .dibujo2{
+        display: none;
+    }
+    .dibujo{
+        height: 250px;
+        width: 500px;
+    }
+}
+@media (max-width:561px) {
+    .inicio{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:450px) {
+    .inicio{
+        margin-top: 200px;
+        margin-bottom: 240px;
+    }
+}
+
+@media (max-width:350px) {
+    .inicio{
+        margin-top: 150px;
+        margin-bottom: 240px;
+    }
+    .list li{
+        margin: 0 auto;
+        
+    }
+    .list li a{
+        font-size: 10px;
+    }
+}
